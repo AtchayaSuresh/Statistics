@@ -6,7 +6,7 @@ public class Coin {
     private final CoinSide coinSide;
 
     public Coin(CoinSide coinSide) {
-        this.coinSide=coinSide;
+        this.coinSide = coinSide;
     }
 
     public enum CoinSide {
@@ -16,13 +16,18 @@ public class Coin {
         private final double probability;
 
         CoinSide(double probability) {
-            this.probability=probability;
+            this.probability = probability;
         }
 
         public double getProbability() {
             return probability;
         }
     }
+
+    public double occurringTogetherWith(Coin coin) {
+        return this.coinSide.getProbability() * coin.coinSide.getProbability();
+    }
+
 
     @Override
     public boolean equals(Object o) {
