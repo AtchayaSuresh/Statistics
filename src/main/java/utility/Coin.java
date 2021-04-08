@@ -24,7 +24,7 @@ public class Coin {
         }
     }
 
-    public double occurringTogetherWith(Coin coin) {
+    public double probabilityOfOccurringTogether(Coin coin) {
         return this.coinSide.getProbability() * coin.coinSide.getProbability();
     }
 

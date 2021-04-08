@@ -21,7 +21,7 @@ public class CoinTest {
         Coin coinFacedTailInSecondToss = new Coin(Coin.CoinSide.TAIL);
         double expectedProbability = 0.25;
 
-        double actualProbability = coinFacedHeadInFirstToss.occurringTogetherWith(coinFacedTailInSecondToss);
+        double actualProbability = coinFacedHeadInFirstToss.probabilityOfOccurringTogether(coinFacedTailInSecondToss);
 
         assertEquals(expectedProbability, actualProbability);
     }
@@ -32,7 +32,7 @@ public class CoinTest {
         Coin coinFacedHeadInSecondToss = new Coin(Coin.CoinSide.HEAD);
         double expectedProbability = 0.25;
 
-        double actualProbability = coinFacedHeadInFirstToss.occurringTogetherWith(coinFacedHeadInSecondToss);
+        double actualProbability = coinFacedHeadInFirstToss.probabilityOfOccurringTogether(coinFacedHeadInSecondToss);
 
         assertEquals(expectedProbability, actualProbability);
     }
