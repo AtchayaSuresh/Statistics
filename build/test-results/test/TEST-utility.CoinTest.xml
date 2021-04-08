@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="utility.CoinTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-08T06:22:07" hostname="LAPTOP-R30JSA26" time="0.054">
+<testsuite name="utility.CoinTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-08T11:54:10" hostname="LAPTOP-R30JSA26" time="0.057">
   <properties/>
-  <testcase name="testIfProbabilityOfHeadAndTailOccurringTogetherIs0_25()" classname="utility.CoinTest" time="0.048"/>
-  <testcase name="testIfProbabilityOfHeadAndHeadOccurringTogetherIs0_25()" classname="utility.CoinTest" time="0.002"/>
+  <testcase name="testIfProbabilityOfHeadAndTailOccurringTogetherIs0_25()" classname="utility.CoinTest" time="0.041"/>
+  <testcase name="testIfProbabilityOfHeadAndHeadOccurringTogetherIs0_25()" classname="utility.CoinTest" time="0.003"/>
+  <testcase name="testIfProbabilityOfNonOccurrenceOfHeadIs0_5()" classname="utility.CoinTest" time="0.002"/>
+  <testcase name="testIfProbabilityOfNonOccurrenceOfTailIs0_5()" classname="utility.CoinTest" time="0.002"/>
   <testcase name="testIfProbabilityOfHeadAndTailAreEqualInCoinIsTrue()" classname="utility.CoinTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

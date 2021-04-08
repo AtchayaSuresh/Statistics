@@ -9,6 +9,10 @@ public class Coin {
         this.coinSide = coinSide;
     }
 
+    public double probabilityOfNonOccurrence() {
+        return 1-coinSide.getProbability();
+    }
+
     public enum CoinSide {
         TAIL(0.5),
         HEAD(0.5);
@@ -25,6 +29,8 @@ public class Coin {
     }
 
     public double probabilityOfOccurringTogether(Coin coin) {
+        if(coin.coinSide!=this.coinSide)
+            return coin.coinSide.getProbability();
         return this.coinSide.getProbability() * coin.coinSide.getProbability();
     }
 
